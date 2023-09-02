@@ -12,7 +12,7 @@ app = FastAPI()
 #http://127.0.0.1:8000 url
 #http://127.0.0.1:8000/docs
 
-items = pd.read_parquet(r'user_items.parquet')
+items = pd.read_parquet('user_items.parquet')
 #items = pd.read_csv(r'user_items.csv')
 #recomendacion = pd.read_csv(r'recomendacion.csv')
 #modelo = pd.read_csv(r'games_modelo.csv')
@@ -20,7 +20,7 @@ items = pd.read_parquet(r'user_items.parquet')
 @app.get('/userdata')
 def userdata(User_id:str):
     df_usu_games = pd.read_csv(r'games.csv')
-    items_usu_games = pd.read_parquet(r'user_items.parquet')
+    items_usu_games = pd.read_parquet('user_items.parquet')
     reviews_usu_games = pd.read_csv(r'reviews.csv')
     
     games_usu = items_usu_games[items_usu_games['user_id'] == User_id]['item_id'] # Se lista la cantidad de juegos por usuario
