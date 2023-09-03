@@ -129,7 +129,7 @@ def genre(genero:str):
 def userforgenre(genero:str):
     games_gen2 = pd.read_csv(r'games.csv')
     items = pd.read_csv(r'items_userforgenre.csv')
-    #games_gen2['id'] = games_gen2['id'].astype(str)
+    games_gen2['id'] = games_gen2['id'].astype(str)
     generos = items.merge(games_gen2, left_on='item_id', right_on='id')
     generos = generos[generos['genres'] == genero]
     user_time = generos.groupby('user_id')['playtime_forever'].sum()
