@@ -31,10 +31,10 @@ def userdata(User_id:str):
 
     prices = []
     for elemento in games_usu:
-        if df_usu_games[df_usu_games['id'] == int(elemento)]['price'].to_list() == []:
+        if df_usu_games[df_usu_games['id'] == (elemento)]['price'].to_list() == []:
             pass
         else:
-            prices.append(df_usu_games[df_usu_games['id'] == int(elemento)]['price'].to_list()[0])
+            prices.append(df_usu_games[df_usu_games['id'] == (elemento)]['price'].to_list()[0])
 
     suma = sum(prices)
 
