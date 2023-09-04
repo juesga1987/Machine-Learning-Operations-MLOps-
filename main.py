@@ -221,6 +221,6 @@ def recomendacion_juego(id:int):
     e = lista_nombres[4]
                 
 
-    return {'a' : a, 'b': b, 'c': c, 'd': d, 'e': e}
+    return a, b, c, d, e
 
 
