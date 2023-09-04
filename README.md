@@ -1,6 +1,6 @@
 ![Logo de Steam](https://prod.assets.earlygamecdn.com/images/Steam.jpg?transform=article3x_webp&x=0.5&y=0.5)
 
-# # Proyecto de MLOps Engineer aplicado a plataforma gaming Steam
+#Proyecto de MLOps Engineer aplicado a plataforma gaming Steam
 ## Juan Esteban García.
 ## Email: juanestebangarciarodriguez@gmail.com
 ## Usuario GitHub: juesga1987
@@ -15,12 +15,18 @@ En este proyecto, asumí el rol de un MLOps Engineer en Steam, una plataforma mu
    
 El objetivo de este proyecto en términos generales es utilizar las bases de datos provistas y realizar el respectivo proceso de extracción, transformación y carga (ETL) garantizando el despliegue de una API funcional usando la librería FastApi y Render (Sistema en la nube de construcción y ejecución de apps) donde se alojarán consultas especificas realizadas a través de funciones además de los resultados del sistema de recomendación. 
 Este es un caso don partiendo de cero buscamos seguir el ciclo de vida de un proyecto de Machine Learning hasta el deployment final de los resultados.
-##Descripción del Problema
-#Contexto
+
+#Descripción del Problema
+
+##Contexto
+
 A pesar de que nuestra empresa Steam ha obtenido buenos resultados previamente aun careciendo de un análisis exhaustivo de la información que ha recopilado como resultado de la interacción de los usuarios con la plataforma, la empresa busca ahora tomar ventaja de las tecnologías actuales para entender mucho mejor las relaciones entre los juegos que ofrece, sus usuarios y las características de los mismos, además del desarrollo de un sistema de recomendación que permita que la interacción con la plataforma sea mucho más certera y de esta forma capturar un mayor número de clientes y lograr la fidelización de los actuales.
 Como especialistas en datos contamos con datos de bajo de calidad que requieren de data engineering para que sean útiles y agreguen valor. 
+
 # Resumen del trabajo y sus etapas
+
 ## ETL
+
 Leer los datasets proporcionados en el formato correcto realizando las eliminaciones de columnas innecesarias para optimizar el rendimiento de la API y el entrenamiento del modelo, Esta etapa es fundamental pues era necesario interactuar con datasets que contenían columnas anidadas en listas de diccionarios, emoticones e imágenes como códigos escritos de tipo alfanumericos con caracteres especiales, espacios nulos, fechas en formatos no compatibles y columnas de % de calificación con texto. 
 Posterior a lo anterior y dado el tamaño de algunos de los DataFrames resultantes decidí crear archivos fraccionados según la necesidad de cada función y el modelo, esta es una decisión fundamental, pues, aunque sacrifica algo de veracidad asegura que el deployment se ejecute sin inconvenientes. Dado que la memoria de procesamiento de Render es únicamente de 500mb, para algunas de las funciones se prefirió seleccionar una muestra de los datasets pues a pesar de haber creado archivos con la información estrictamente necesaria para cada función algunas de ellas necesitaban menor costo computacional. En mi caso dichas funciones fueron: UserData, UserForGenre y el modelo de recomendación.
 ## Análisis de sentimientos
