@@ -1,3 +1,5 @@
+![Logo de Steam](https://ejemplo.com/logo_steam.png))
+
 # # Proyecto de MLOps Engineer aplicado a plataforma gaming Steam
 ## Juan Esteban García.
 ## Email: juanestebangarciarodriguez@gmail.com
