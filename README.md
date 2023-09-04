@@ -14,7 +14,7 @@
 3.	Items: Nos provee con gran especificidad de los usuarios, su tiempo de juego, su id en la plataforma e id del usuario.
    
 ### El objetivo de este proyecto en términos generales es utilizar las bases de datos provistas y realizar el respectivo proceso de extracción, transformación y carga (ETL) garantizando el despliegue de una API funcional usando la librería FastApi y Render (Sistema en la nube de construcción y ejecución de apps) donde se alojarán consultas especificas realizadas a través de funciones además de los resultados del sistema de recomendación. 
-### Este es un caso don partiendo de cero buscamos seguir el ciclo de vida de un proyecto de Machine Learning hasta el deployment final de los resultados.
+### Este es un caso donde partiendo de cero buscamos seguir el ciclo de vida de un proyecto de Machine Learning hasta el deployment final de los resultados.
 
 # Descripción del Problema
 
