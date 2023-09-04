@@ -217,6 +217,4 @@ def recomendacion_juego(id:int):
     return diccionario
 
 
-    return  diccionario
-
 
