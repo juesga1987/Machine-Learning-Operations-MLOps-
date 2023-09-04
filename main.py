@@ -138,7 +138,7 @@ def userforgenre(genero:str):
 
 @app.get('/developer/{desarrollador}')
 def developer(desarrollador: str ):
-    games_dev = pd.read_csv(r'games.csv')
+    games_dev = pd.read_csv(r'df_games_developer.csv')
     pd.set_option('display.float_format', '{:.2f}'.format) # Seteo para permitir mostrar numeros muy grandes
 
 # columna free not free para luego sacar el % con base en la cantidad de juegos (items) por desarrollador, no se hace con item count pues este se refiere a los items por usuario y no por desarrollador
