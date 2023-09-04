@@ -58,7 +58,7 @@
 ## Modelo ML de recomendacion
 ### Después de preparar los datos y realizar el EDA, entrenamos el modelo de recomendación basado en la similaridad del coseno que es una medida de similitud entre dos vectores que como producto arroja la relacion entre los mismos en referencia a una variable dada, como lo mencionamos anteriormente en mi caso, se determino que un juego (item) estaba intimamente ligado al genero y el desarrollador. 
 ### La librería Scikit-Learn proporciona los metodos para la creacion de la matriz o vectores (TfidVectorizer) y el metodo de coseno de similaridad (cosine_similarity). En este paso y dadas las limitaciones de procesamiento de nuestro host Render se tomo una muetra del 27% original del DataSet. Esta es la minima muestra que asegura un resultado de recomendación.
-Finalmente a traves de una funci[on que considerara no arrojar como recomendación el mismo item (Juego) introducido como variable de entrada y la no repeticion de recomendaciones se obtienen los 5 items mejor valorados recomendados.
+### Finalmente a traves de una función que considerara no arrojar como recomendación el mismo item (Juego) introducido como variable de entrada y la no repeticion de recomendaciones se obtienen los 5 items mejor valorados recomendados.
 
 
 
