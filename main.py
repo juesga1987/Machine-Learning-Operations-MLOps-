@@ -162,7 +162,7 @@ def developer(desarrollador: str ):
     resultado_final['porcentaje_free'] = resultado_final['porcentaje_free'].apply(lambda x: f"{x:.2f}%")
     resultado_final['release_date_anio'] = resultado_final['release_date_anio'].apply(lambda x: f"{x:.0f}")
 # Dejo solo las columnas para el return
-    df_final = {resultado_final[['release_date_anio','porcentaje_free']]}
+    df_final = resultado_final[['release_date_anio','porcentaje_free']]
 
 
     diccionario = {
