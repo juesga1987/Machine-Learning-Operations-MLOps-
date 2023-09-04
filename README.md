@@ -7,7 +7,7 @@
 
 ## Introducción
 
-En este proyecto, asumí el rol de un MLOps Engineer en Steam, una plataforma multinacional de videojuegos, para este caso en particular analizamos la información provista por la empresa para Australia en las siguientes bases de datos:
+###En este proyecto, asumí el rol de un MLOps Engineer en Steam, una plataforma multinacional de videojuegos, para este caso en particular analizamos la información provista por la empresa para Australia en las siguientes bases de datos:
 
 1.	Steam Games: Base datos de los juegos que contiene información relevante como desarrolladores, nombre de los títulos, precio, genero, año de lanzamiento entre otras.
 2.	Reviews: Se trata de un dataset con las recomendaciones y reviews detalladas por usuario de los juegos con los que interactuaron, en este encontramos datos como el user id, recomendación, review detallado, fecha de posteo del review, juego calificado.
