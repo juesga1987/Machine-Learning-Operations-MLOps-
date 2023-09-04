@@ -48,7 +48,7 @@
 •	developer(developer: str): Cantidad de items y el porcentaje de contenido gratuito por año según la empresa desarrolladora.
 •	sentiment_analysis(year: int): Lista con la cantidad de registros de reseñas de usuarios categorizados con un análisis de sentimiento según el año de lanzamiento.
 ## Análisis Exploratorio de los Datos Modelo de recomendacion (EDA)
-### Se realizo un EDA de los datos usados para el desarrollo de modelo de recomendación como era solicitado por la empresa.
+### Se realizo un EDA de los datos del dataframe games pues de alli se extrajeron los datos  para el desarrollo de modelo de recomendación como era solicitado por la empresa, vale la pena aclarar que el archivo usado para el modelo de recomendación es simplement un dataframe con la información justamente necesario para ejecutarlo de acuerdo a a las variables identificadas como mas relevantes.
 ### Se analizaron las variables mas relevantes del dataset con base en el modelo de recomendación item a item o juego a juego. Con base en el EDA se determino que el mismo debia ser realizado con el desarrollador y el genero pues determinaban en mayor medida la selección de un juego en particular.
 ### El EDA se realizo de forma grafica mayoritariamente pues definitivamente hace los datos mas amenos y faciles de entender para el usuario final de la informacion, se usaron:
 -	Barras.
