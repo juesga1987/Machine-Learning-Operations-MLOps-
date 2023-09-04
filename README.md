@@ -5,7 +5,7 @@
 ## Email: juanestebangarciarodriguez@gmail.com
 ## Usuario GitHub: juesga1987
 
-## Introducción
+# Introducción
 
 En este proyecto, asumí el rol de un MLOps Engineer en Steam, una plataforma multinacional de videojuegos, para este caso en particular analizamos la información provista por la empresa para Australia en las siguientes bases de datos:
 
@@ -16,9 +16,9 @@ En este proyecto, asumí el rol de un MLOps Engineer en Steam, una plataforma mu
 El objetivo de este proyecto en términos generales es utilizar las bases de datos provistas y realizar el respectivo proceso de extracción, transformación y carga (ETL) garantizando el despliegue de una API funcional usando la librería FastApi y Render (Sistema en la nube de construcción y ejecución de apps) donde se alojarán consultas especificas realizadas a través de funciones además de los resultados del sistema de recomendación. 
 Este es un caso don partiendo de cero buscamos seguir el ciclo de vida de un proyecto de Machine Learning hasta el deployment final de los resultados.
 
-#Descripción del Problema
+# Descripción del Problema
 
-##Contexto
+## Contexto
 
 A pesar de que nuestra empresa Steam ha obtenido buenos resultados previamente aun careciendo de un análisis exhaustivo de la información que ha recopilado como resultado de la interacción de los usuarios con la plataforma, la empresa busca ahora tomar ventaja de las tecnologías actuales para entender mucho mejor las relaciones entre los juegos que ofrece, sus usuarios y las características de los mismos, además del desarrollo de un sistema de recomendación que permita que la interacción con la plataforma sea mucho más certera y de esta forma capturar un mayor número de clientes y lograr la fidelización de los actuales.
 Como especialistas en datos contamos con datos de bajo de calidad que requieren de data engineering para que sean útiles y agreguen valor. 
