@@ -206,7 +206,7 @@ cosine_sim = cosine_similarity(tfidf_matrix, tfidf_matrix) # Ejecutamos la simil
 # Fucion
 @app.get('/recomendacion_juego/{id}')
 def recomendacion_juego(id:int):
-    modelo = pd.read_csv(r'df_modelo_recomendacion.csv') # leemos dataframe del archivo
+    #modelo = pd.read_csv(r'df_modelo_recomendacion.csv') # leemos dataframe del archivo
     item_indice = modelo[modelo["id"] == id].index[0] # Obtenemos el indice del item input en nuestro DataFrame
     items_similares = list(enumerate(cosine_sim[item_indice])) # Generamos lista con los items similares que devolvio el modelo
     similar_items_organizados = sorted(items_similares, key=lambda x: x[1], reverse=True) # Organizamos los items del punto anterior
