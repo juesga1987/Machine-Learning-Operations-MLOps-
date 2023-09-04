@@ -92,8 +92,6 @@ def genre(genero:str):
     games_gen = pd.read_csv(r'df_games_genre.csv') # Importamos dataframe
     items = pd.read_csv(r'items_genre.csv') #Importamos dataframe
     games_gen.drop_duplicates(subset=['id'], inplace=True) # Elimina los juegos repetidos, para al hacer match entre ambos datasets no duplicar
-    #games_gen['id'] = games_gen['id'].astype(str)
-    pd.set_option('display.float_format', '{:.2f}'.format) # Seteo para permitir mostrar numeros muy grandes
     df_game_time = items[['item_id','playtime_forever']] # Solo trae estas dos columnas que son las necesarias para el codigo.
     df_agrupado = df_game_time.groupby('item_id')['playtime_forever'].sum() # agrupa por juego el total jugado.
     merged = pd.merge(games_gen, df_agrupado, left_on='id', right_on='item_id', how='left') # Hago el merge
