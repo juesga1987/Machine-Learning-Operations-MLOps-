@@ -1,4 +1,4 @@
-![Logo de Steam](https://prod.assets.earlygamecdn.com/images/Steam.jpg?transform=article3x_webp&x=0.5&y=0.5))
+![Logo de Steam](https://prod.assets.earlygamecdn.com/images/Steam.jpg?transform=article3x_webp&x=0.5&y=0.5)
 
 # # Proyecto de MLOps Engineer aplicado a plataforma gaming Steam
 ## Juan Esteban García.
