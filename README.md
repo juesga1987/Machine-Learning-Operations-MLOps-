@@ -4,6 +4,10 @@
 ## Juan Esteban García.
 ## Email: juanestebangarciarodriguez@gmail.com
 ## Usuario GitHub: juesga1987
+## Link API : https://proyecto-individual-1-mlops.onrender.com/docs#/
+## Información al interior del repositorio:
+1. Carpeta entregables: Archivos tipo notebook: ETL, Analisis de sentimientos, funciones, modelo de recomendación.
+2. Repositorio (Arhivos para deployment API)
 
 # Introducción
 
@@ -46,7 +50,9 @@
 •	userforgenre(genre: str): Top 5 de usuarios con más horas de juego en el género dado, con su URL y user_id. En este caso tambien se uso una muestra de items para permitir el deployment.
 
 •	developer(developer: str): Cantidad de items y el porcentaje de contenido gratuito por año según la empresa desarrolladora.
+
 •	sentiment_analysis(year: int): Lista con la cantidad de registros de reseñas de usuarios categorizados con un análisis de sentimiento según el año de lanzamiento.
+
 ## Análisis Exploratorio de los Datos Modelo de recomendacion (EDA)
 ### Se realizo un EDA de los datos del dataframe games pues de alli se extrajeron los datos  para el desarrollo de modelo de recomendación como era solicitado por la empresa, vale la pena aclarar que el archivo usado para el modelo de recomendación es simplement un dataframe con la información justamente necesario para ejecutarlo de acuerdo a a las variables identificadas como mas relevantes.
 ### Se analizaron las variables mas relevantes del dataset con base en el modelo de recomendación item a item o juego a juego. Con base en el EDA se determino que el mismo debia ser realizado con el desarrollador y el genero pues determinaban en mayor medida la selección de un juego en particular.
