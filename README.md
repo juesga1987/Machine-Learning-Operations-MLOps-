@@ -7,7 +7,8 @@
 ## Link API : https://proyecto-individual-1-mlops.onrender.com/docs#/
 ## Información al interior del repositorio:
 1. Carpeta entregables: Archivos tipo notebook: ETL, Analisis de sentimientos, funciones, modelo de recomendación y archivos adicionales que se obtuvieron para el trabajo y fueron usados como base para los archivos finales de considerados en la API
-2. Repositorio (Arhivos para deployment API)
+
+3. Repositorio (Arhivos para deployment API)
 
 # Introducción
 
